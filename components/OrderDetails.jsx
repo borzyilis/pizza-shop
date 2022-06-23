@@ -1,13 +1,16 @@
 import { useState } from "react";
 import styles from "../styles/OrderDetails.module.css";
+import { useRouter } from 'next/router'
 
 const OrderDetails = ({ total, createOrder, setState }) => {
   const [customer, setCustomer] = useState("");
   const [address, setAddress] = useState("");
+  const router = useRouter()
 
 
   const handleClick = () => {
-    createOrder({ customer, address, total, method: 0 });
+    
+    router.push("/orders/1")
   };
 
   return setState && (

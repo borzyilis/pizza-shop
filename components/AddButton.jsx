@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
 import styles from '../styles/AddButton.module.css'
 import { useState } from 'react'
-import axios from "axios";
 import { useRouter } from "next/router"
 
 
