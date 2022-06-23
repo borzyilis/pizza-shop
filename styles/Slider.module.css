@@ -1,0 +1,35 @@
+ .container{
+     height: calc(100vh - 100px);
+    overflow: hidden;
+    /* background-image: url("../public/img/featured1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; */
+ }
+
+ .arrowContainer{
+     position: absolute;
+     width: 10%;
+     height: 20%;
+     top: 0;
+     bottom: 0;
+     margin: auto;
+     cursor: pointer;
+ }
+
+ .wrapper{
+     width:500vw;
+     height: 100%;
+     display: flex;
+     transition:all 1.5s ease-in-out ;
+ }
+
+.imgContainer{
+
+    width: 100vw;
+    height: 100%;
+    position: relative;
+}
+
+.pizzaImage {
+    object-fit: cover;
+}
