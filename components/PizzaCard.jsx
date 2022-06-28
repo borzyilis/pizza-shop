@@ -11,8 +11,8 @@ const PizzaCard = ({ id }) => {
 
   return (
     <div className={styles.container}>
-      <Link href={`/cart`}>
-      <Image src={"/../public/img/pizza.img"} alt="" width="500" height="500" />
+      <Link href={`/product/${id}`}>
+      <Image src={"/../public/img/pizza.png"} alt="" width="500" height="500" />
       </Link>
       <h1 className={styles.title}>Pizza Margharita</h1>
       <p className={styles.price}>$15</p>

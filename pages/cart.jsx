@@ -24,13 +24,39 @@ const Cart = () => {
           <tr className={styles.trTitle}>
             <th>Product</th>
             <th>Name</th>
-            <th>Extras</th>
             <th>Price</th>
             <th>Quantity</th>
             <th>Total</th>
           </tr>
         </tbody>
         <tbody>
+        <tr className={styles.tr}>
+              <td>
+                <div className={styles.imgContainer}>
+                  <Image
+                    src={"/../public/img/pizza.png"}
+                    layout="fill"
+                    objectFit="cover"
+                    alt=""
+                  />
+                </div>
+              </td>
+              <td>
+                <span className={styles.name}>Margharita</span>
+              </td>
+              <td>
+                <span className={styles.price}>$15</span>
+              </td>
+              <td>
+                <span className={styles.quantity}>1</span>
+              </td>
+              <td>
+                <span className={styles.total}>
+                  $15
+                </span>
+              </td>
+            </tr>
+
         </tbody>
       </table>
     </div>

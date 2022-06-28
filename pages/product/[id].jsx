@@ -6,31 +6,25 @@ import {useRouter} from 'next/router'
 
 
 
-const Product = ({ pizza }) => {
+const Product = () => {
     const router = useRouter()
-    const [price, setPrice] = useState(15)
+
+    const pizza={
+        prices: [10, 15, 17]
+    }
+
+
+    const [price, setPrice] = useState(pizza.prices[0])
     const [size, setSize] = useState(0)
-    const [options, setOptions] = useState([])
     const [quantity, setQuantity] = useState(1)
     const changePrice = (number) => {
         setPrice(price + number)
     }
 
     const handleSize = (sizeIndex) => {
-        const difference = price[sizeIndex] - price[size]
+        const difference = pizza.prices[sizeIndex] - pizza.prices[size]
         setSize(sizeIndex)
         changePrice(difference)
-    }
-
-    const handleChange = (e, option) => {
-        const checked = e.target.checked
-        setOptions(prev => [...prev, option])
-        if (checked) {
-            changePrice(option.price)
-        } else {
-            changePrice(-option.price)
-            setOptions(options.filter((extra) => extra._id !== option._id))
-        }
     }
 
     const handleCLick = () => {
@@ -41,12 +35,12 @@ const Product = ({ pizza }) => {
         <div className={styles.container}>
             <div className={styles.left}>
                 <div className={styles.imgContainer}>
-                    <Image src={"/../public/img/pizza.img"} objectFit="contain" layout='fill' alt=""></Image>
+                    <Image src={"/../public/img/pizza.png"} objectFit="contain" layout='fill' alt=""></Image>
                 </div>
             </div>
             <div className={styles.right}>
                 <h1 className={styles.title}> Margharita</h1>
-                <span className={styles.price}>$15 </span>
+                <span className={styles.price}>{price}</span>
                 <p className={styles.desc}>Our new tasty Margharita</p>
                 <h3 className={styles.choose}>Choose the size</h3>
                 <div className={styles.sizes}>
@@ -62,11 +56,6 @@ const Product = ({ pizza }) => {
                         <Image src="/img/size.png" layout="fill" alt=""></Image>
                         <span className={styles.number}>Large</span>
                     </div>
-                </div>
-                <h3 className={styles.choose}>Choose additional ingredients</h3>
-                <div className={styles.ingredients}>
- 
-
                 </div>
                 <div className={styles.add}>
                     <input type="number" min="1" defaultValue={quantity} className={styles.quantity} onChange={(e) => setQuantity(e.target.value)}></input>
