@@ -12,6 +12,7 @@ Wenn man zufrieden mit dem Option ist, kann man die Pizza bestellen. Danach man 
 
 
 ### P - Planen
+
 Index Seite: Einleitung in der Seite. 3 Pizzas zum Auswahl.
 Product Seite: Die Seite für das ausgewählte Produkt. 
 Cart Seite: Seite mit dem angezeigten Produkt, das man bestellen will. Im Pop-Up Fenster gibt man seine Angaben ein.
@@ -28,11 +29,27 @@ Index Seite:
 
 Die Index Seite enthält ein Pizza Bild, "Beschreibung" von den Pizzas, und die 3 Pizzas. Die 3 Pizzas sind PizzaCard Components. Diese Components sind wiederverwedbar und deshalb muss ich nicht das gleiche 3 mal schreiben. Die PizzaCard Component wird 3 mal in PizzaList Component aufgerufen und PizzaList Component selber wird auf Index Seite aufgerugen. Im Endeffekt sieht man 3 Pizzas auf der Index Seite.
 
-Product 
+Product Seite:
 
+Die Product Seite enthält die entsprechende Pizza, auf welche man geklickt hat. Auf dieser Seite hat man die Möglichkeit die grösse vom Pizza auswählen und zum Warenkorb hinzufügen.
 
+Warenkorb Seite:
 
-K- Kontrollieren
+Hier wird die Bestellung detaliert angezeigt. Um die Pizza zu bestellen, muss man seine Name, Adresse und Telefon Nummer eingeben.
+
+Order Seite: 
+
+Auf dieser Seite sieht man auf welcher Etappe seine Bestellung ist. 
+
+### K - Kontrollieren
+
+3 Pizzas auf der Hauptseite :+1:
+Pizza konfigurieren :+1:
+Bestellung anschauen :+1:
+Bestellung bestellen :+1:
+Harcoded Daten :thumbsdown:
+
 
 A - Auswerten
 
+Im Allgemein habe ich die ersprünglichen Ziele erreicht. Die Website funktioniert und sie ist interaktiv, obwohl ein Teil davon hardcoded ist. Hätte ich früher mit Thymeleaf aufgegeben, hätte ich die API eingebunden.
