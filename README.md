@@ -50,6 +50,6 @@ Bestellung bestellen :+1:
 Harcoded Daten :thumbsdown:
 
 
-A - Auswerten
+### A - Auswerten
 
 Im Allgemein habe ich die ersprünglichen Ziele erreicht. Die Website funktioniert und sie ist interaktiv, obwohl ein Teil davon hardcoded ist. Hätte ich früher mit Thymeleaf aufgegeben, hätte ich die API eingebunden.
