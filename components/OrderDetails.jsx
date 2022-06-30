@@ -2,7 +2,7 @@ import { useState } from "react";
 import styles from "../styles/OrderDetails.module.css";
 import { useRouter } from 'next/router'
 
-const OrderDetails = ({ total, createOrder, setState }) => {
+const OrderDetails = ({ setState }) => {
   const [customer, setCustomer] = useState("");
   const [address, setAddress] = useState("");
   const router = useRouter()
